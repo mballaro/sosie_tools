@@ -25,15 +25,6 @@ resolution_lon = YAML['resolution_lon']
 resolution_lat = YAML['resolution_lat']
 merged_nc_file = YAML['merged_nc_file']
 
-# # Domain decomposition
-# delta_lon = 1.
-# delta_lat = 1.
-# vector_lon = np.arange(-80., 8., delta_lon)
-# vector_lat = np.arange(27., 67., delta_lat)
-# # Output grid resolution
-# resolution_lon = 1./60.
-# resolution_lat = 1./60.
-
 # final grid lon/lat
 lon = np.arange(vector_lon[0]-resolution_lon, vector_lon[-1]+delta_lon+2*resolution_lon, resolution_lon)
 lat = np.arange(vector_lat[0]-resolution_lat, vector_lat[-1]+delta_lat+resolution_lat, resolution_lat)
