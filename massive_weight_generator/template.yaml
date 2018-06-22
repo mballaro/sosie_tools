@@ -1,0 +1,24 @@
+
+output_dir: /home/mballarotta/sosie_tools/OUTPUTS
+template_sosie: /home/mballarotta/sosie_tools/template.namelist
+sosie_exe_path: /home/mballarotta/Public/git/sosie/bin/sosie.x
+
+# Domain of interest
+llcrnrlon: -80.
+urcrnrlon: 8.
+llcrnrlat: 27
+urcrnrlat: 67
+
+# Domain decomposition (in degree lon / lat) on CLUSTER   
+delta_lon: 1.
+delta_lat: 1.
+
+# Output grid resolution # 1./60. = 0.01666666666666666666667
+resolution_lon: 0.01666666666666666666667 
+resolution_lat: 0.01666666666666666666667
+
+merged_nc_file: sosie_mapping_NATL60-CJM165-NATL60-REG_merged.nc
+
+# ACHTUNG:
+# NOTE: USER must adapt qsub bash job submission in script parallel_genweight.py
+# Tested with sosie version: dc446ea444e05fa3511946af9f098d6ab701f458
